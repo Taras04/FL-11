@@ -1,0 +1,206 @@
+@media print{
+    @page{
+        margin: 0;        
+    }
+    .tm-sidebar, .gallery-container,
+     .carousel-indicators,  .img-contact-us,
+        .tm-team-img, #contact{
+        display: none;
+    }
+    body{
+        color: #000;
+        background-color: #fff;
+        margin: 0; 
+        font-size: 11pt  
+    }
+    h2{
+        font-weight: 300;
+        color: lightskyblue;
+        text-transform: uppercase;        
+      }
+    .container div{
+        max-width: 100%;
+        text-align: center;
+    }
+    section  div  ol  a{
+        text-decoration: none;
+        color: #000;
+    }
+    a:hover{
+        text-decoration: none;
+      }
+    .tm-banner,
+    .tm-main-content{
+      padding: 0;
+    }   
+    .tm-content-box{
+        margin-bottom: 0;
+    }
+    .padding-medium ol>li::first-letter{
+        font-size: 30px;
+        color: lightskyblue;
+    }
+    .padding-medium ol>li:nth-child(even){
+        text-align: end;
+    }
+    .padding-medium ol>li:nth-child(odd){
+        text-align: start;
+    }
+    .heading ol{
+        list-style-type: none;
+        width: 300pt;
+        padding: 0;
+        margin: 0 auto;
+    }
+      .container{
+        max-width: 100%;  
+    }
+    .padding-medium{
+        padding: 10px;
+    }
+    .tm-content-box{
+        margin: 0;
+        padding: 0;
+    }
+    .tm-content-header{
+        padding-bottom: 30px;
+    }       
+}
+
+@media screen{
+        .box-bg:hover{
+            background-color: lightskyblue;
+        }
+        .box-bg:hover > h2{
+            color: #fff;
+        }
+        .tm-banner{
+            background-color: #76cdd7;
+        }
+        .tm-sidebar, .tm-banner, #home, section{
+            box-shadow: 0 0 13px 0 rgba(61, 55, 61, 0.7);
+        }  
+        .tm-banner-inner{
+            background-color: #fff;
+            text-shadow: 0 10px 2px #76cdd7, 0 4px 1px #76cdd7;
+            letter-spacing: 4px;
+            word-spacing: 8px;
+        }
+        section:before{
+            content: "";
+            border-top: 50px solid lightskyblue;
+            border-right: 50px solid transparent;
+        }
+        .heading h2{
+            font-weight: 300;            
+            color: lightskyblue;
+            text-align: center;            
+        }
+          .heading ol{
+            list-style: lower-roman;
+        }
+        .heading a:visited {
+            color: #ffb347;
+        }
+        .text::after{
+            content: 'New';
+            color: #ff0000;
+            font-size: 10px;
+            font-weight: bolder;
+            vertical-align: top;
+        }
+        .heading a:hover{            
+            color: #ffb347;
+            border-left: 2px solid #ffb347;
+            font-weight: bold;
+            padding-left: 5px;
+            text-decoration: none;
+        }
+        .box-work{
+            padding: 10px;
+        }
+        .box-work:nth-child(even) {
+            background-color: #f2f2f4;
+        }
+        .box-work p{
+            text-indent: 0;
+            font-style: italic;                       
+        }        
+        .box-work p::first-letter{
+            font-size: 28px;                                
+        }
+        .contact-form input{
+            border: 2px solid #fff;
+            border-bottom: 2px solid lightskyblue;
+            border-radius: 1px;
+        }
+        .contact-form textarea {            
+            border: 2px solid lightskyblue;
+            border-radius: 3px;
+            resize: none;
+          }
+        .contact-form input:focus, .contact-form textarea:focus{
+            border: 2px solid lightskyblue;
+            background: #76cdd7;
+            border-radius: 4px;
+            color: #fff;
+        }    
+        .contact-form input:focus::placeholder,
+        .contact-form textarea:focus::placeholder{
+            color: #fff;
+        }
+        .mandatory-field::after{
+            display: inline-block;
+            content: "";
+            background: no-repeat url("../img/email-icon.png");
+            background-size: 30px;
+            width: 30px;
+            height: 30px;
+            top: 6px;
+            right: 2px;
+        }
+          .submit-btn{
+            float: right;
+            border: 2px solid lightskyblue;
+            background-color: #fff;
+            color: lightskyblue;
+            border-radius: 0;
+            font-weight: 300;
+            padding: 0.8rem 3rem;
+        }
+        .submit-btn:hover{
+            background: lightskyblue;
+            border: 2px solid lightblue;
+          }
+          .tm-nav-item:hover{
+            background-color: #e8e8e8;
+        }
+        h2 + p{
+            font-style: italic;
+        }
+        h2 ~ p{
+            padding: 10px 0px 10px 0px;  
+            line-height: 180%;           
+        }
+        .flex-2-col {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .tm-banner-text {
+            animation-name: rotate;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+          }        
+        @keyframes rotate {
+            from {
+              transform: rotateY(0)
+            }
+            to {
+              transform: rotateY(360deg)
+            }
+        }  
+}
+      
+
+    
