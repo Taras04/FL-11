@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+	}
+body{
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+	position: relative;
+    width: 900px;
+    line-height: 1;
+}
+    header,section, div{
+	display: block;
+}
+ ol, ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+input{
+	border-width: 1px;
+	background-color: inherit;
+}
+button{
+	color: inherit;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+::placeholder{
+	color: #000;
+}
+header{
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px;
+	color: #fff;
+}
+.logo{
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;  
+}
+header .identif{
+    margin-left: 20px;
+	color: inherit;
+}
+.imgDest{    
+    position: relative;
+    background-image: url("../img/sample2.jpg");	
+	color: #fff;
+	background-position: center;
+    min-height: 560px;
+    background-size: cover;
+}
+.head{
+	background-color: #F3F3F3;
+}
+.head div{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+    text-align: center;
+	transform: translateY(-50%);    
+}
+.head div h1{	
+	text-transform: uppercase;
+	letter-spacing: 7px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.headNav a:hover{
+    background: rgba(1, 0, 0, .7);
+ }
+.headNav{
+    position: absolute;
+    bottom: 80px;	
+    width: 100%;    
+}
+.head div h1 span{
+	font-size: 66px;
+}
+.headNav ul{
+	display: flex;
+	justify-content: space-evenly;
+}
+.headNav a{
+	display: block;
+	padding: 10px 65px;
+	border: 1px solid #fff;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.textL{
+	position: relative;
+	z-index: 2;
+	padding: 0 50px 60px;
+}
+.textL:after{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	background: linear-gradient(to top right, #f3f3f3 49.6%, #000 50%);
+}
+.textL p:first-child{
+	margin-bottom: 30px;
+	margin-left: 50%;
+	color: #fff;
+}
+.textL p:last-child{
+	margin-right: 60%;
+	font-size: 16px;
+}
+.textL p span{
+	font-weight: 800;
+}
+.article{
+	padding: 0 50px 30px;
+	background-color: #F3F3F3;
+}
+h2{
+	margin-bottom: 30px;
+	text-align: center;
+	}
+h2 span{
+	font-weight: 900  !important;
+}
+.articleItem{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.explore{
+	position: relative;
+}
+.articleItem .explore{
+	width: 50%;
+}
+.articleItem img{
+	width: 100%;
+	height: 100%;
+}
+.articleItemText{
+	width: 46%;
+	padding-top: 20px;
+}
+.articleItemText p{
+	margin-bottom: 36px;
+	text-align: center;
+}
+.exploreDet{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	color: #fff;
+	box-shadow: inset 1px 1px 300px -109px rgba(0, 0, 0, 1);
+	font-size: 12px;
+}
+.exploreDet button{
+	margin-top: 15px;
+	margin-right: 15px;
+	padding: 5px 10px;
+	text-align: right;
+	color: #F0F0F0;
+	border: 1px solid #F0F0F0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.exploreDet a{
+	align-self: center;
+	width: 77%;
+	padding: 7px;
+	text-align: center;
+	background-color: rgba(9, 119, 116, 0.8);
+	font-weight: 700;
+}
+.exploreDet span{
+	align-self: flex-start;
+	padding: 20px;
+	font-weight: 400;
+}
+.listImg{
+	display: flex;
+	padding: 26px;
+}
+.pic{
+	width: 25%;
+	margin-bottom: 25px;
+	padding: 0 25px;
+}
+.pic img{
+	width: 100%;
+	height: 235px;
+	object-position: left;
+	object-fit: cover;
+}
+.pic .exploreDet{
+	right: 25px;
+	left: 25px;
+}
+.buttonLoad{
+	margin-bottom: 30px;
+	text-align: center;
+}
+.buttonLoad button{
+	padding: 15px 100px;
+	color: #E8E8E8;
+	background-color: #097774;
+}
+.footerText{
+	padding: 30px 20px;
+	background-color: #F3F3F3;
+}
+.footerText p{
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+.bottom{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+.bottom span{
+	color: #9E9E9E;
+}
+.bottomLink{
+	display: flex;
+}
+.bottomLink li{
+	margin-left: 15px;
+}
+.form{
+	text-align: end;
+}
+.formLabel {
+	margin-right: 15px;
+	font-size: 22px;
+}
+.formLabel span{
+	font-weight: 700;
+}
+.formInput{
+	margin-right: 5px;
+	padding: 10px;
+	border-color: #000;
+}
+.formButton{
+	padding: 12px;
+	color: #fff;
+	background-color: #097774;
+	font-weight: 700;
+}
+
